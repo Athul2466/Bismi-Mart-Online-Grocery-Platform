@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bismi Mart</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h3{
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #27ae60;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info h3 {
+            color: #333;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            text-align: center;
+           
+        }
+        .contact-info a {
+            color: #27ae60;
+            text-decoration: none;
+            
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+    
+        }
+        .social-links a {
+            margin-right: 15px;
+            color: #27ae60;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+           
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1e8449;
+        }
+        .faq {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .faq a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+        .faq a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    
+    <div class="contact-info">
+        <h3>Customer Support</h3>
+        <p>Phone: +91 9786525198</p>
+        <p>Email: <a href="mailto:support@bismimart.com">support@bismimart.com</a></p>
+        <p>Live Chat: Available 9 AM - 8 PM (Monday to Friday)</p>
+    </div>
+
+    <div class="contact-info">
+        <h3>Visit Us</h3>
+        <p>Store Location: Near Btm layout , Bengaluru 560095 </p>
+        <p>Hours: 9 AM - 8 PM (Monday to Saturday)</p>
+    </div>
+
+    <div class="contact-info social-links">
+        <h3>Follow Us on Social Media</h3>
+        <p>
+            <a href="https://www.facebook.com" target="_blank"></a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Fcebook logo" style="width:30px; height:30px;"> 
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"></a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram logo" style="width:30px; height:30px;"> 
+            <a href="https://web.whatsapp.com" target="_blank"></a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Whatsup logo" style="width:30px; height:30px;"> 
+
+
+           
+        </p>
+    </div>
+
+    <h3>Send Us a Message</h3>
+    <form action="#" method="post">
+    
+        <input type="text" placeholder="Your Name" id="name" name="name" required>
+
+        
+        <input type="email" placeholder="Your Email" id="email" name="email" required>
+
+       
+        <textarea id="message" placeholder="Message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="faq">
+        <p>Looking for quick answers? Visit our <a href="#">FAQ</a> page for solutions to common questions.</p>
+    </div>
+</div>
+
+</body>
+</html>

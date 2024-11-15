@@ -1,0 +1,727 @@
+<html>
+ <head>
+  <title>
+   BISMI MART
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5e9;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        input:focus {
+    outline: none;
+}
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo h1 {
+            font-size: 24px;
+            color: #4CAF50;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-bar button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .hero {
+            position: relative;
+            text-align: left;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            transition: 0.5s;
+            
+        
+        }
+        .clickable:hover{
+          background-color: #2E7D32;
+
+        }  
+        
+        .product button:hover{
+            background-color: #2E7D32;
+        }
+        
+        .footer button:hover{
+            background-color: #0e9c15;
+        }
+        
+        .hero-text h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero-text p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .hero-text button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 32px;
+            color: #333;
+        }
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 16px;
+            color: #777;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 16px;
+            color: #777;
+            margin: 10px 0;
+        }
+        .product .price {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product .special-price {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .product .quantity {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .product .quantity input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 0 5px;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .info-section div {
+            width: 30%;
+        }
+        .info-section div i {
+            font-size: 48px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .info-section div p {
+            font-size: 16px;
+            color: #777;
+        }
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            padding: 40px 0;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        footer .container div {
+            width: 30%;
+        }
+        footer h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        footer p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        footer input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        footer button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer .social-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px; 
+            
+        }
+        footer .social-icons i {
+            font-size: 24px;
+            color: white;
+        }
+        .loginColor{
+            color: rgb(90, 137, 90);
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="logo">
+     <img alt="Bismi Mart Logo" height="80" src="https://media.istockphoto.com/id/1289609842/vector/grocery-paper-bag-with-food-design-reusable-produce-bag-with-healthy-vegan-vegetarian-food.jpg?s=612x612&w=0&k=20&c=9hzs1nojO_7HU5pbtQFjDrrPyBiXrhQFPG8HaEPKdaw=" width="60"/>
+     <h1>
+        Bismi Mart
+     </h1>
+    </div>
+    <nav>
+     <ul>
+      <li>
+       <a href="Home.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="Shop.html">
+        Shop
+       </a>
+      </li>
+      <li>
+       <a href="About.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="Contact.html">
+        Contact
+       </a>
+      </li>
+     </ul>
+     <div class="search-bar">
+      <input placeholder="Search..."  type="text" />
+      <button>
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+     <div class="user-actions">
+      <a href="Login.html" class="loginColor">
+       <i class="fas fa-user">
+       </i>
+       Log In
+      </a>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <section class="hero">
+   <img alt="Hero Image" height="500" src="Bismi.jpg" width="1200"/>
+   <div class="hero-text">
+    <h2>
+     BISMI MART
+    </h2>
+    <p>
+     WE'LL DELIVER EVERYTHING YOU NEED
+    </p>
+    <button class="clickable">SHOP ONLINE</button>
+
+  
+  </section>
+  <section>
+   <h2 class="section-title">
+    Weekly Deals
+   </h2>
+   <p class="section-subtitle">
+    You don't want to miss out on these great deals
+   </p>
+   <div class="products">
+    <div class="product">
+     <div class="special-price">
+      Special Price
+     </div>
+     <img alt="Eggs" height="200" src="https://storage.googleapis.com/a1aa/image/fqtxxZ1me3sfoIgrm6fJebLTExOfd5aiDPZor2KiH1TySOq6E.jpg" width="200"/>
+     <h3>
+      Egg
+     </h3>
+     <p class="price">
+        <span class="special-price">
+         $5.99
+        </span>
+        $3.99
+       </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <div class="special-price">
+      Special Price
+     </div>
+     <img alt="Toilet Paper" height="200" src="https://storage.googleapis.com/a1aa/image/Ge4EMuSHWvXrYyoI9hKkANtOFfT9HpIfeP8DTal7TrPOkjqOB.jpg" width="200"/>
+     <h3>
+      Toilet Paper
+     </h3>
+     <p class="price">
+        <span class="special-price">
+         $10.99
+        </span>
+        $8.99
+       </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <div class="special-price">
+      Special Price
+     </div>
+     <img alt="Tomatoes" height="200" src="https://storage.googleapis.com/a1aa/image/aP0fC6HTMt3OHiQIaf6CmiExZBm0EGWMvDM2gJkeCjfgkjqOB.jpg" width="200"/>
+     <h3>
+      Tomatoes
+     </h3>
+     <p class="price">
+      <span class="special-price">
+       $9.99
+      </span>
+      $8.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <div class="special-price">
+      Special Price
+     </div>
+     <img alt="Cheese" height="200" src="https://storage.googleapis.com/a1aa/image/RnJTN29Sz5JADRuLywhJqbOLRvKKkgfTulRekxlus1ZJ5oqTA.jpg" width="200"/>
+     <h3>
+      Cheese
+     </h3>
+     <p class="price">
+      <span class="special-price">
+       $8.99
+      </span>
+      $6.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+   </div>
+  </section>
+  <section>
+   <h2 class="section-title">
+    Grab 'N Go
+   </h2>
+   <p class="section-subtitle">
+    your one stop shop for all your favorite fresh produce and dairy
+   </p>
+   <div class="products">
+    <div class="product">
+     <img alt="Orange" height="200" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg" width="200"/>
+     <h3>
+      Orange
+     </h3>
+     <p class="price">
+      $9.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Pears" height="200" src="https://storage.googleapis.com/a1aa/image/9GAzTlIerx0naK5vo8hi6un6IEya9Q0S4G6BIIaxcerP5oqTA.jpg" width="200"/>
+     <h3>
+      Pears
+     </h3>
+     <p class="price">
+      $9.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Milk" height="200" src="https://storage.googleapis.com/a1aa/image/KzOG4yPT0nIjO9QMm4JxCXosrgHPCCR16SzxdlG683oROq6E.jpg" width="200"/>
+     <h3>
+      Milk
+     </h3>
+     <p class="price">
+      $9.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Bananas" height="200" src="https://storage.googleapis.com/a1aa/image/2Wd0PLblnUoYIleO5qmZdvxPmampJp8mucPExu9B8AgpcU1JA.jpg" width="200"/>
+     <h3>
+      Bananas
+     </h3>
+     <p class="price">
+      $9.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+
+     <img alt="Nutella" height="200" src="https://5.imimg.com/data5/SELLER/Default/2023/3/JN/YV/QY/158381798/nutella-chocolate-hazelnut-cocoa-spread-500x500.webp" width="200"/>
+     <h3>
+        Nutella
+     </h3>
+     <p class="price">
+        $9.99
+       </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Bread" height="200" src="https://storage.googleapis.com/a1aa/image/KHeJDA2Qqfq540iEXFZwcnJc4o1ZEayT7COuIzl4sChM5oqTA.jpg" width="200"/>
+     <h3>
+      Bread
+     </h3>
+     <p class="price">
+      $9.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Ketchup" height="200" src="https://luluindia-prod-assets.s3.ap-south-1.amazonaws.com/pims/grocery/products/11200_5.png" width="200"/>
+     <h3>
+        Ketchup
+     </h3>
+     <p class="price">
+      $9.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+    <div class="product">
+     <img alt="Potatoes" height="200" src="https://storage.googleapis.com/a1aa/image/gfRcoDPOXb1UekY2sEhAlWYonNZJeeXTOLnehuNzktVBKHVdC.jpg" width="200"/>
+     <h3>
+        Potatoes
+     </h3>
+     <p class="price">
+      $9.99
+     </p>
+     <div class="quantity">
+      <button>
+       -
+      </button>
+      <input type="text" value="1"/>
+      <button>
+       +
+      </button>
+     </div>
+     <button>
+      Add to Cart
+     </button>
+    </div>
+   </div>
+  </section>
+  <section class="info-section">
+   <div>
+    <i class="fas fa-shopping-bag">
+    </i>
+    <h3>
+     Pick Up Options
+    </h3>
+    <p>
+        Choose a convenient pick-up option at checkout to collect your items on your schedule. Our pick-up locations are accessible and easy to find for a smooth shopping experience
+    </p>
+   </div>
+   <div>
+    <i class="fas fa-truck">
+    </i>
+    <h3>
+     Same Day Delivery
+    </h3>
+    <p>
+        Get your groceries delivered to your doorstep the same day you place your order. With our efficient delivery system, we ensure fresh produce and timely service
+    </p>
+   </div>
+   <div>
+    <i class="fas fa-heart">
+    </i>
+    <h3>
+     Health &amp; Safety Rules
+    </h3>
+    <p>
+        We prioritize the health and safety of our customers and team members. All products are handled with care, adhering to strict hygiene and safety protocols to ensure a safe shopping experience
+    </p>
+   </div>
+  </section>
+  <footer>
+   <div class="container">
+    <div>
+     <h3>
+      STORE
+     </h3>
+     <p>
+      Shop All
+     </p>
+     <p>
+      Shipping &amp; Returns
+     </p>
+     <p>
+      Store Policy
+     </p>
+     <p>
+      FAQ
+     </p>
+    </div>
+    <div>
+     <h3>
+      ADDRESS
+     </h3>
+     <p>
+        Near Btm layout 
+     </p>
+        Bengaluru 560095
+     <p>
+      
+     </p>
+    </div>
+    <div>
+     <h3>
+      OPENING HOURS
+     </h3>
+     <p>
+      Mon - Fri: 7am - 10pm
+     </p>
+     <p>
+      Saturday: 8am - 10pm
+     </p>
+     <p>
+      Sunday: 8am - 11pm
+     </p>
+    </div>
+    <div>
+     <h3>
+      GET IT FRESH
+     </h3>
+     <input placeholder="Email" type="email"/>
+     <button>
+      SUBSCRIBE NOW
+     </button>
+     <div class="social-icons">
+      <i class="fab fa-facebook-f">
+      </i>
+      <i class="fab fa-twitter">
+      </i>
+      <i class="fab fa-instagram">
+      </i>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
